@@ -197,10 +197,10 @@
 				})
 			],
 			onCheck : function() {
-				el1SVG.style.fill = '#F198CA';
+				el1SVG.style.fill = '#CA7AA8';
 			},
 			onUnCheck : function() {
-				el1SVG.style.fill = '#C0C1C3';
+				el1SVG.style.fill = '#808183';
 			}
 		});
 		/* End Unicorn*/

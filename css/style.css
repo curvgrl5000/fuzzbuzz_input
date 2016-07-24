@@ -38,15 +38,38 @@ a:focus {
 	outline: none;
 }
 
+/*Colors*/
+.pwderblue, span. {
+	color: #7688AC;
+}
+
+.pwderblue {
+	color: #7688AC;
+}
+
+.hotpink {
+	color: rgba(233, 30, 99, 0.53);
+}
+
 /* Links */
 .main-title {
 	font-size: 2.5em;
 	line-height: 2em;
-	padding: 3.5em 0.5em 0;
+	padding: 2.5em 0.5em 0;
 	margin: 0;
 	text-align: center;
 	width: 100%;
 }
+
+.brclear {
+	clear:both;
+	height:0;
+	margin:0;
+	font-size: 1px;
+	line-height: 0;
+}
+
+
 
 /* fizzy */
 .link {
@@ -58,12 +81,12 @@ a:focus {
     color: #9e9ba4;
     display: inline-block;
     color: rgba(233, 30, 99, 0.53); /*start here*/
-     font-family: 'Playfair Display', serif; 
-     font-weight: 700; 
-     font-style: italic; 
-     padding: 0.25em 0; 
-     -webkit-transition: color 0.5s; 
-     transition: color 0.5s;
+    font-family: 'Playfair Display', serif; 
+    font-weight: 700; 
+    font-style: italic; 
+    padding: 0.25em 0; 
+    -webkit-transition: color 0.5s; 
+    transition: color 0.5s;
 }
 
 .link--fizzy {
@@ -211,19 +234,18 @@ a:focus {
 	margin-right: auto;
 }
 
-.soft_shadow
-{
+.soft_shadow {
   position: relative;
 }
-.soft_shadow:before, .soft_shadow:after
-{
+
+.soft_shadow:before, .soft_shadow:after {
   z-index: -1;
   position: absolute;
   content: "";
   bottom: 25px;
   left: 10px;
   width: 50%;
-  top: 80%;
+  top: 95%;
   max-width:300px;
   background: #777;
   -webkit-box-shadow: 0 35px 20px #777;
@@ -235,8 +257,8 @@ a:focus {
   -ms-transform: rotate(-8deg);
   transform: rotate(-8deg);
 }
-.soft_shadow:after
-{
+
+.soft_shadow:after {
   -webkit-transform: rotate(8deg);
   -moz-transform: rotate(8deg);
   -o-transform: rotate(8deg);
@@ -250,7 +272,7 @@ a:focus {
 .grid__item {
     position: relative;
     text-align: center;
-    margin: 1em 0 4em 0;
+    margin: 1em 0 2em 0;
     width: 100%;
     min-height: 10em;
     display: -ms-flexbox;
@@ -315,11 +337,40 @@ a:focus {
 
 /* Unicorn */
 .icobutton--unicorn svg {
-	fill: #c0c1c3;
+	fill: #808183;
+}
+
+form#preferences {
+    padding: 0 12em;
+    width: 100%;
+}
+
+label {
+    line-height: 2;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+section#printout {
+    padding: 0px 100px 35px 100px;
+    min-width: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#printout p {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+    
 }
 
 /* Responsive */
-
 @media (max-width: 55rem) {
 	.link {
 	    font-size: 2.25em;
@@ -343,11 +394,14 @@ a:focus {
 		line-height: 1.125em;
 	   	padding-left: 1.125em;
 	   	padding-right: 1.125em;
+	}
+	form#preferences {
+    		padding: 0 5em;
 	}    
 }
 @media (max-width: 32rem) {
 	.main-title {
-		padding: 3.25em .5em 0;
+		padding: 2.25em .5em 30px;
 	}
 	.link {
 	    font-size: 1.35em;
@@ -355,6 +409,9 @@ a:focus {
 	.link--fizzy span { 
 		font-size: 0.4em;
 		line-height: 1.125em;
+	}
+	form#preferences {
+	    padding: 0 2em;
 	}
 }
 
